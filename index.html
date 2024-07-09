@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="chess">
+            <div class="busket" id="white-busket"></div>
+            <div class="busket" id="black-busket"></div>
+            <h1>Chess</h1>
+            <div class="table">
+                <div class="ordering-column">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                    <span>e</span>
+                    <span>f</span>
+                    <span>g</span>
+                    <span>h</span>
+                </div>
+                <div class="ordering-row">
+                    <span>8</span>
+                    <span>7</span>
+                    <span>6</span>
+                    <span>5</span>
+                    <span>4</span>
+                    <span>3</span>
+                    <span>2</span>
+                    <span>1</span>
+                </div>
+                <div class="row" data-row="a">
+                    <div class="block" data-order="1">
+                        <img class="figure" data-type="elephant" data-side="white" src="images/white/elephant.svg" alt="elephant">
+                    </div>
+                    <div class="block" data-order="2">
+                        <img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn">
+                    </div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8">
+                        <img class="figure" data-type="elephant" data-side="black" src="images/black/elephant.svg" alt="elephant">
+                    </div>
+                </div>
+                <div class="row" data-row="b">
+                    <div class="block" data-order="1">
+                        <img class="figure" data-type="horse" data-side="white" src="images/white/horse.svg" alt="horse">
+                    </div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="horse" data-side="black" src="images/black/horse.svg" alt="horse"></div>
+                </div>
+                <div class="row" data-row="c">
+                    <div class="block" data-order="1"><img class="figure" data-type="rook" data-side="white" src="images/white/rook.svg" alt="rook"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="rook" data-side="black" src="images/black/rook.svg" alt="rook"></div>
+                </div>
+                <div class="row" data-row="d">
+                    <div class="block" data-order="1"><img class="figure" data-type="queen" data-side="white" src="images/white/queen.svg" alt="queen"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="queen" data-side="black" src="images/black/queen.svg" alt="queen"></div>
+                </div>
+                <div class="row" data-row="e">
+                    <div class="block" data-order="1"><img class="figure" data-type="king" data-side="white" src="images/white/king.svg" alt="king"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="king" data-side="black" src="images/black/king.svg" alt="king"></div>
+                </div>
+                <div class="row" data-row="f">
+                    <div class="block" data-order="1"><img class="figure" data-type="rook" data-side="white" src="images/white/rook.svg" alt="rook"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="rook" data-side="black" src="images/black/rook.svg" alt="rook"></div>
+                </div>
+                <div class="row" data-row="g">
+                    <div class="block" data-order="1"><img class="figure" data-type="horse" data-side="white" src="images/white/horse.svg" alt="horse"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="horse" data-side="black" src="images/black/horse.svg" alt="horse"></div>
+                </div>
+                <div class="row" data-row="h">
+                    <div class="block" data-order="1"><img class="figure" data-type="elephant" data-side="white" src="images/white/elephant.svg" alt="elephant"></div>
+                    <div class="block" data-order="2"><img class="figure" data-type="pawn" data-side="white" src="images/white/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="3"></div>
+                    <div class="block" data-order="4"></div>
+                    <div class="block" data-order="5"></div>
+                    <div class="block" data-order="6"></div>    
+                    <div class="block" data-order="7"><img class="figure" data-type="pawn" data-side="black" src="images/black/pawn.svg" alt="pawn"></div>
+                    <div class="block" data-order="8"><img class="figure" data-type="elephant" data-side="black" src="images/black/elephant.svg" alt="elephant"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
